@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    //border: 1px solid black;
+}
+
+:root {
+    --White: hsl(0, 100%, 100%);
+    --Purple-100: hsl(275, 100%, 97%);
+    --Purple-600: hsl(292, 16%, 49%);
+    --Purple-950: hsl(292, 42%, 14%);
+    --Pink: #AC28EB;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+
+.upperSection {
+    height: 33.33vh;
+    background-image: url("assets/images/background-pattern-desktop.svg");
+    position: relative;
+}
+
+.lowerSection {
+    height: 66.66vh;
+    background-color: var(--Purple-100);
+    position: relative;
+}
+
+.container {
+    width: 600px;
+    max-width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: white;
+    padding: 40px;
+    border-radius: 16px;
+
+}
+
+header {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+
+h1 {
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--Purple-950);
+    line-height: 100%;
+}
+
+button {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--Purple-950);
+    --bs-accordion-btn-icon-width: 30px;
+    --bs-accordion-active-bg: white;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-btn-padding-x: 0px;
+}
+
+button:hover {
+    color: var(--Pink);
+}
+
+.last-button {
+    padding-bottom: 0px;
+}
+
+.accordion-body {
+    color: var(--Purple-600);
+    font-size: 16px;
+    line-height: 1.4rem;
+    padding-left: 0px;
+}
+
+.accordion-button::after {
+    background-image: url("assets/images/icon-plus.svg");
+}
+
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("assets/images/icon-minus.svg");
+}
+
+
+@media(max-width:500px) {
+
+
+
+    .upperSection {
+        background-image: url("assets/images/background-pattern-mobile.svg");
+    }
+
+
+    .container {
+        max-width: 90%;
+        padding: 24px;
+        border-radius: 8px;
+    }
+
+    header {
+        display: flex;
+        gap: 24px;
+        align-items: last baseline;
+    }
+
+    header img {
+        width: 21px;
+    }
+
+
+    h1 {
+        font-size: 32px;
+
+    }
+
+
+
+
+}
