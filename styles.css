@@ -49,8 +49,12 @@ header {
     gap: 24px;
     align-items: center;
     margin-bottom: 24px;
+
 }
 
+header img {
+    margin-bottom: 6px;
+}
 
 h1 {
     font-size: 56px;
@@ -67,6 +71,14 @@ button {
     --bs-accordion-active-bg: white;
     --bs-accordion-btn-focus-box-shadow: none;
     --bs-accordion-btn-padding-x: 0px;
+    /* Deleting border */
+    --bs-accordion-border-color: none;
+
+}
+
+.first-button {
+    /* Deleting border */
+    border-top: none;
 }
 
 button:hover {
@@ -94,8 +106,13 @@ button:hover {
 }
 
 
-@media(max-width:500px) {
 
+
+
+
+
+
+@media(max-width:500px) {
 
 
     .upperSection {
@@ -122,9 +139,7 @@ button:hover {
 
     h1 {
         font-size: 32px;
-
     }
-
 
 
 
