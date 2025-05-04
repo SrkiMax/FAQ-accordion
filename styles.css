@@ -112,7 +112,7 @@ button:hover {
 
 
 
-@media(max-width:400px) {
+@media(max-width:400px) and (orientation: landscape) {
 
 
     .upperSection {
@@ -148,7 +148,7 @@ button:hover {
 }
 
 
-@media (max-width: 700px) and (orientation: landscape) {
+@media (max-width: 933px) and (orientation: landscape) {
 
 
     .container {
