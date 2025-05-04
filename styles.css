@@ -112,7 +112,7 @@ button:hover {
 
 
 
-@media(max-width:500px) {
+@media(max-width:400px) {
 
 
     .upperSection {
@@ -124,6 +124,8 @@ button:hover {
         max-width: 90%;
         padding: 24px;
         border-radius: 8px;
+
+
     }
 
     header {
@@ -143,4 +145,25 @@ button:hover {
 
 
 
+}
+
+
+@media (max-width: 700px) and (orientation: landscape) {
+
+
+    .container {
+        margin-top: 130px;
+
+    }
+
+    /* REMOVE absolute positioning on small screens */
+    /*.container {
+        position: static;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin: 40px auto;
+    }  */
+
+    /* add vertical spacing */
 }
